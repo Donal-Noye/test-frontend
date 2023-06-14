@@ -1,0 +1,40 @@
+.btn {
+   display: flex;
+   align-items: center;
+
+   font-size: 16px;
+   font-weight: 500;
+   position: relative;
+}
+
+.btn--leading {
+   width: 62px;
+   height: 62px;
+
+   background-image: url("../../assets/images/svg/arrow.svg");
+   background-repeat: no-repeat;
+   background-position: center;
+
+   background-color: #FFFFFF;
+   box-shadow: 0 0 24px rgba(0, 0, 0, 0.2);
+   border-radius: 100%;
+
+   transition: background-image .3s ease, box-shadow .3s ease;
+}
+
+.btn--leading:hover {
+   box-shadow: 0 0 33px rgba(54, 88, 172, 0.4);
+   background-image: url("../../assets/images/svg/arrow-blue.svg");
+}
+
+.btn--primary {
+   color: #fff;
+   background: var(--gradient);
+}
+
+@media only screen and (max-width: 537px) {
+   .btn {
+      font-size: 8px;
+      line-height: 9px;
+   }
+}
